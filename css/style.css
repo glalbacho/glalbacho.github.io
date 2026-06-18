@@ -1,3 +1,30 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+.portrait {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portrait {
+    width: 180px;
+    height: 180px;
+  }
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
