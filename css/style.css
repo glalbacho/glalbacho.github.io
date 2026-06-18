@@ -85,3 +85,16 @@ p {
   margin-top: 20px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
+.links {
+  margin-top: 24px;
+}
+
+.links a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
