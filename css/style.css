@@ -2,15 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
+  gap: 40px;
   margin-bottom: 60px;
 }
 
 .portrait {
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 @media (max-width: 700px) {
@@ -20,8 +21,8 @@
   }
 
   .portrait {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
   }
 }
 
