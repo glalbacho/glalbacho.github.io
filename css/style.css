@@ -86,6 +86,44 @@ a:hover {
   color: #bfdbfe;
 }
 
+.abstract {
+  margin-top: 12px;
+}
+
+.abstract summary {
+  cursor: pointer;
+  color: #93c5fd;
+  font-weight: 500;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract summary::before {
+  content: "\25B6";
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.abstract[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.abstract summary:hover {
+  color: #bfdbfe;
+}
+
+.abstract p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #d1d5db;
+}
+
 .links {
   margin-top: 24px;
 }
