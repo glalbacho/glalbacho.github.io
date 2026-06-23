@@ -30,6 +30,10 @@
   --shadow: rgba(0, 0, 0, 0.07);
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
