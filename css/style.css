@@ -142,6 +142,50 @@ h2::before {
   align-self: center;
 }
 
+/* Collapsible section: heading stays, content folds away. Default closed (+). */
+details.collapse > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+details.collapse > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.collapse > summary h2 {
+  margin: 0;
+  display: inline;
+}
+
+details.collapse > summary h2::before {
+  display: none;
+}
+
+details.collapse > summary::before {
+  content: "+";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+
+details.collapse[open] > summary::before {
+  content: "\2212";
+}
+
+details.collapse > summary:hover::before {
+  color: var(--link-hover);
+}
+
 p {
   font-size: 18px;
   line-height: 1.6;
