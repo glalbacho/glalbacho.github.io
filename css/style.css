@@ -170,12 +170,13 @@ details.collapse > summary::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  font-size: 38px;
+  width: 34px;
+  height: 34px;
+  font-size: 44px;
   font-weight: 400;
   line-height: 1;
   color: var(--accent);
+  transform: translateY(4px);
 }
 
 details.collapse[open] > summary::before {
@@ -184,6 +185,18 @@ details.collapse[open] > summary::before {
 
 details.collapse > summary:hover::before {
   color: var(--link-hover);
+}
+
+/* Smooth expand/collapse: JS wraps the content of each <details> in this. */
+.collapse-content {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapse-content {
+    transition: none;
+  }
 }
 
 p {
