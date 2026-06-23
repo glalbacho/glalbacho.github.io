@@ -76,6 +76,7 @@ nav a::after {
 
 nav a:hover {
   color: var(--nav-link-hover);
+  text-decoration: none;
 }
 
 nav a:hover::after {
