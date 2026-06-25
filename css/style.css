@@ -172,6 +172,12 @@ nav a:hover::after {
   opacity: 0.40;
 }
 
+/* In dark mode, lift the light text off the white chalk behind it. */
+:root:not([data-theme="light"]) .hero-text,
+:root:not([data-theme="light"]) .research-text {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 0 9px rgba(0, 0, 0, 0.4);
+}
+
 .hero-text {
   max-width: 650px;
 }
