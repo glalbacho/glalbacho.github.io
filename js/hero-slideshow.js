@@ -34,7 +34,7 @@
     "/images/bb/IMG_9748.jpg"
   ];
 
-  var INTERVAL = 5 * 60 * 1000; // 5 minutes
+  var INTERVAL = 30 * 1000; // 30 seconds
 
   function init() {
     var bg = document.querySelector(".hero-bg");
