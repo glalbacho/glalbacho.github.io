@@ -278,6 +278,45 @@ a:hover {
   color: var(--muted);
 }
 
+.cv-item + .cv-item {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.cv-when {
+  margin: 0 0 4px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  color: var(--muted);
+}
+
+.cv-what {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.cv-detail {
+  margin: 0 0 4px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.cv-note {
+  margin: 20px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.cv-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .links {
   margin-top: 24px;
 }
