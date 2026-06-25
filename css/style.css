@@ -135,7 +135,7 @@ nav a:hover::after {
 }
 
 .hero-slide.is-visible {
-  opacity: 0.30;
+  opacity: 0.25;
 }
 
 .hero > .portrait,
