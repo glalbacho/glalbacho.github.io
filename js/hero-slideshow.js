@@ -24,7 +24,6 @@
     "/images/bb/IMG_2737.jpg",
     "/images/bb/IMG_2944.jpg",
     "/images/bb/IMG_3363.jpg",
-    "/images/bb/IMG_3674.jpg",
     "/images/bb/IMG_4115.jpg",
     "/images/bb/IMG_7217.jpg",
     "/images/bb/IMG_8290.jpg",
