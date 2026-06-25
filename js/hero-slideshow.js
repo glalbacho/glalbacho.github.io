@@ -42,8 +42,14 @@
     var layers = bg.querySelectorAll(".hero-slide");
     if (layers.length < 2) return;
 
-    // Start at a varied position so reloads don't always show the same board.
+    // Shuffle so every visit gets a random first image and a random order.
     var order = IMAGES.slice();
+    for (var k = order.length - 1; k > 0; k--) {
+      var j = Math.floor(Math.random() * (k + 1));
+      var tmp = order[k];
+      order[k] = order[j];
+      order[j] = tmp;
+    }
     var index = 0;
     var active = 0;
 
