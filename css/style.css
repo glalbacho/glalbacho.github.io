@@ -144,6 +144,34 @@ nav a:hover::after {
   z-index: 1;
 }
 
+.research-box {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 36px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.research-box > .research-text {
+  position: relative;
+  z-index: 1;
+}
+
+.research-text h1 {
+  margin-top: 0;
+}
+
+.research-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* This box shows the boards more clearly than the home hero. */
+.research-box .hero-slide.is-visible {
+  opacity: 0.40;
+}
+
 .hero-text {
   max-width: 650px;
 }
