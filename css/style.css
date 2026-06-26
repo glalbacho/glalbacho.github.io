@@ -162,6 +162,19 @@ nav a:hover::after {
   font-weight: 600;
 }
 
+/* Compact icons used only on small screens. */
+.btn-icon {
+  display: none;
+}
+
+#theme-toggle .btn-icon::before {
+  content: "\2600"; /* sun: dark mode active, tap for light */
+}
+
+:root[data-theme="light"] #theme-toggle .btn-icon::before {
+  content: "\263E"; /* moon: light mode active, tap for dark */
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -564,5 +577,33 @@ footer a:hover {
   nav {
     flex-wrap: wrap;
     gap: 16px;
+  }
+}
+
+/* On phones, collapse the toolbar buttons to compact icons so the whole
+   navigation fits on a single line. */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: nowrap;
+    gap: 14px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .toolbar-btn {
+    padding: 6px 10px;
+  }
+
+  .toolbar-btn .btn-text {
+    display: none;
+  }
+
+  .toolbar-btn .btn-icon {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    font-size: 16px;
   }
 }

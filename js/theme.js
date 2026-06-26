@@ -25,7 +25,8 @@
     var tb = document.getElementById("theme-toggle");
     if (tb) {
       var target = curTheme() === "light" ? "dark" : "light";
-      tb.textContent = THEME_LABELS[target + "-" + lang];
+      var txt = tb.querySelector(".btn-text") || tb;
+      txt.textContent = THEME_LABELS[target + "-" + lang];
     }
     var opts = document.querySelectorAll(".lang-option");
     for (var i = 0; i < opts.length; i++) {
