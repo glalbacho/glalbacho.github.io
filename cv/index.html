@@ -12,29 +12,39 @@
 <body>
   <main class="page">
     <nav>
-      <a href="/">Home</a>
-      <a href="/research/">Research</a>
-      <a href="/cv/">CV</a>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Farbschema wechseln">Light mode</button>
+      <a href="/"><span class="lang-en">Home</span><span class="lang-de">Startseite</span></a>
+      <a href="/research/"><span class="lang-en">Research</span><span class="lang-de">Forschung</span></a>
+      <a href="/cv/"><span class="lang-en">CV</span><span class="lang-de">Lebenslauf</span></a>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="toolbar-btn" type="button" aria-label="Language / Sprache">Deutsch</button>
+        <button id="theme-toggle" class="toolbar-btn" type="button" aria-label="Theme / Farbschema">Light mode</button>
+      </div>
     </nav>
 
     <section id="cv">
-      <h1>CV</h1>
+      <h1><span class="lang-en">CV</span><span class="lang-de">Lebenslauf</span></h1>
     </section>
 
     <section id="education">
       <details class="collapse">
-        <summary><h2>Education</h2></summary>
+        <summary><h2><span class="lang-en">Education</span><span class="lang-de">Ausbildung</span></h2></summary>
         <div class="card">
-          <div class="cv-item">
+          <div class="cv-item lang-en">
             <p class="cv-when">2020 &ndash; present</p>
             <div class="cv-body">
               <p class="cv-what"><strong>PhD candidate in Mathematics</strong>, RWTH Aachen University</p>
               <p class="cv-detail">Chair of Applied Analysis</p>
             </div>
           </div>
+          <div class="cv-item lang-de">
+            <p class="cv-when">seit 2020</p>
+            <div class="cv-body">
+              <p class="cv-what"><strong>Doktorand der Mathematik</strong>, RWTH Aachen</p>
+              <p class="cv-detail">Lehrstuhl für Angewandte Analysis</p>
+            </div>
+          </div>
 
-          <div class="cv-item">
+          <div class="cv-item lang-en">
             <p class="cv-when">2017 &ndash; 2020</p>
             <div class="cv-body">
               <p class="cv-what"><strong>M.Sc. Mathematics</strong>, RWTH Aachen University</p>
@@ -42,8 +52,16 @@
               <p class="cv-detail">Thesis: &ldquo;Existence Results for Three-Dimensional Hopfions in a Continuum Model of Frustrated Magnets&rdquo;</p>
             </div>
           </div>
+          <div class="cv-item lang-de">
+            <p class="cv-when">2017 &ndash; 2020</p>
+            <div class="cv-body">
+              <p class="cv-what"><strong>M.Sc. Mathematik</strong>, RWTH Aachen</p>
+              <p class="cv-detail">Abschlussnote: 1,1</p>
+              <p class="cv-detail">Masterarbeit: &bdquo;Existence Results for Three-Dimensional Hopfions in a Continuum Model of Frustrated Magnets&ldquo;</p>
+            </div>
+          </div>
 
-          <div class="cv-item">
+          <div class="cv-item lang-en">
             <p class="cv-when">2014 &ndash; 2017</p>
             <div class="cv-body">
               <p class="cv-what"><strong>B.Sc. Mathematics</strong>, RWTH Aachen University</p>
@@ -51,29 +69,52 @@
               <p class="cv-detail">Thesis: &ldquo;A Concentration-Compactness Result via an Isoperimetric Inequality&rdquo;</p>
             </div>
           </div>
+          <div class="cv-item lang-de">
+            <p class="cv-when">2014 &ndash; 2017</p>
+            <div class="cv-body">
+              <p class="cv-what"><strong>B.Sc. Mathematik</strong>, RWTH Aachen</p>
+              <p class="cv-detail">Abschlussnote: 2,0</p>
+              <p class="cv-detail">Bachelorarbeit: &bdquo;Concentration Compactness &ndash; Resultat durch eine isoperimetrische Ungleichung&ldquo;</p>
+            </div>
+          </div>
 
-          <div class="cv-item">
+          <div class="cv-item lang-en">
             <p class="cv-when">2011 &ndash; 2014</p>
             <div class="cv-body">
               <p class="cv-what"><strong>Abitur</strong> (university-entrance qualification), <a href="https://mariengymnasium-bocholt.de/" target="_blank" rel="noopener noreferrer">Mariengymnasium</a>, Bocholt</p>
               <p class="cv-detail">Final grade: 2.3 &middot; Advanced courses: Mathematics and Physics</p>
             </div>
           </div>
+          <div class="cv-item lang-de">
+            <p class="cv-when">2011 &ndash; 2014</p>
+            <div class="cv-body">
+              <p class="cv-what"><strong>Abitur</strong>, <a href="https://mariengymnasium-bocholt.de/" target="_blank" rel="noopener noreferrer">Mariengymnasium</a>, Bocholt</p>
+              <p class="cv-detail">Abschlussnote: 2,3 &middot; Leistungskurse: Mathematik und Physik</p>
+            </div>
+          </div>
 
-          <div class="cv-item">
+          <div class="cv-item lang-en">
             <p class="cv-when">2005 &ndash; 2011</p>
             <div class="cv-body">
               <p class="cv-what"><strong>Mittlere Reife</strong> (secondary-school certificate), Werner-von-Siemens-Schule, Bocholt</p>
               <p class="cv-detail">Final grade: 2.6</p>
             </div>
           </div>
+          <div class="cv-item lang-de">
+            <p class="cv-when">2005 &ndash; 2011</p>
+            <div class="cv-body">
+              <p class="cv-what"><strong>Mittlere Reife</strong>, Werner-von-Siemens-Schule, Bocholt</p>
+              <p class="cv-detail">Abschlussnote: 2,6</p>
+            </div>
+          </div>
 
-          <p class="cv-note">Grades follow the German scale (1.0 = best, 4.0 = pass).</p>
+          <p class="cv-note lang-en">Grades follow the German scale (1.0 = best, 4.0 = pass).</p>
+          <p class="cv-note lang-de">Noten nach deutschem System (1,0 = beste, 4,0 = bestanden).</p>
         </div>
       </details>
 
       <details class="collapse">
-        <summary><h2>Primary school</h2></summary>
+        <summary><h2><span class="lang-en">Primary school</span><span class="lang-de">Grundschule</span></h2></summary>
         <div class="card">
           <div class="cv-item">
             <p class="cv-when">2005</p>
@@ -93,9 +134,9 @@
 
     <section id="teaching-experience">
       <details class="collapse">
-        <summary><h2>Teaching Experience</h2></summary>
+        <summary><h2><span class="lang-en">Teaching Experience</span><span class="lang-de">Lehrerfahrung</span></h2></summary>
         <div class="card">
-          <div class="cv-entry">
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Higher Mathematics 2</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; March 2026 &ndash; September 2026</p>
             <p class="cv-detail">Professor: <a href="https://www.mathematik.rwth-aachen.de/cms/mathematik/fachgruppe/institute-lehrstuehle/personen/~bkbg/mitarbeiter-campus-/?gguid=PER-4DL9MKM&allou=1" target="_blank" rel="noopener noreferrer">Prof. Dr. Ivan Yaroslavtsev</a></p>
@@ -107,7 +148,19 @@
             <p class="cv-detail">Tasks: Created exercise sheets, presented exercises, prepared exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Höhere Mathematik 2</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; März 2026 &ndash; September 2026</p>
+            <p class="cv-detail">Professor: <a href="https://www.mathematik.rwth-aachen.de/cms/mathematik/fachgruppe/institute-lehrstuehle/personen/~bkbg/mitarbeiter-campus-/?gguid=PER-4DL9MKM&allou=1" target="_blank" rel="noopener noreferrer">Prof. Dr. Ivan Yaroslavtsev</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~blqow/olaf-wittich/?allou=1" target="_blank" rel="noopener noreferrer">Priv.-Doz. Dr. Olaf Wittich</a>,
+              <a href="https://kiliankoch.de" target="_blank" rel="noopener noreferrer">Kilian Koch, M.Sc.</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~bjomyl/valentin-linse/?allou=1" target="_blank" rel="noopener noreferrer">Valentin Linse, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungszettel erstellt, Übungen präsentiert, Klausuraufgaben erstellt und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Higher Mathematics 1</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; October 2025 &ndash; March 2026</p>
             <p class="cv-detail">Professor: <a href="https://www.mathematik.rwth-aachen.de/cms/mathematik/fachgruppe/institute-lehrstuehle/personen/~bkbg/mitarbeiter-campus-/?gguid=PER-4DL9MKM&allou=1" target="_blank" rel="noopener noreferrer">Prof. Dr. Ivan Yaroslavtsev</a></p>
@@ -119,7 +172,19 @@
             <p class="cv-detail">Tasks: Created exercise sheets, presented exercises, prepared exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Höhere Mathematik 1</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; Oktober 2025 &ndash; März 2026</p>
+            <p class="cv-detail">Professor: <a href="https://www.mathematik.rwth-aachen.de/cms/mathematik/fachgruppe/institute-lehrstuehle/personen/~bkbg/mitarbeiter-campus-/?gguid=PER-4DL9MKM&allou=1" target="_blank" rel="noopener noreferrer">Prof. Dr. Ivan Yaroslavtsev</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~blqow/olaf-wittich/?allou=1" target="_blank" rel="noopener noreferrer">Priv.-Doz. Dr. Olaf Wittich</a>,
+              <a href="https://kiliankoch.de" target="_blank" rel="noopener noreferrer">Kilian Koch, M.Sc.</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~bjomyl/valentin-linse/?allou=1" target="_blank" rel="noopener noreferrer">Valentin Linse, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungszettel erstellt, Übungen präsentiert, Klausuraufgaben erstellt und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Mathematics III</strong> &middot; Co-lecturer</p>
             <p class="cv-meta">International Academy RWTH Aachen, Aachen &middot; August 2025 &ndash; September 2025</p>
             <p class="cv-detail">Lecturer: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -131,7 +196,19 @@
             <p class="cv-detail">Partners: RWTH Aachen University, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Mathematik III</strong> &middot; Co-Dozent</p>
+            <p class="cv-meta">International Academy der RWTH Aachen, Aachen &middot; August 2025 &ndash; September 2025</p>
+            <p class="cv-detail">Dozent: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://kiliankoch.de" target="_blank" rel="noopener noreferrer">Kilian Koch, M.Sc.</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~bjomyl/valentin-linse/?allou=1" target="_blank" rel="noopener noreferrer">Valentin Linse, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Interaktive Online-Übungen für internationale Studierende durchgeführt, fachliche Unterstützung geleistet, Lernmaterialien erstellt sowie Prüfungen in einem Online-Format erstellt und korrigiert.</p>
+            <p class="cv-detail">Partner: RWTH Aachen, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Partial Differential Equations 1</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; April 2025 &ndash; September 2025</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -141,7 +218,17 @@
             <p class="cv-detail">Tasks: Created exercises, presented exercises, contributed exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Partielle Differentialgleichungen 1</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; April 2025 &ndash; September 2025</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://kiliankoch.de" target="_blank" rel="noopener noreferrer">Kilian Koch, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungen erstellt, Übungen präsentiert, Klausuraufgaben beigetragen und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Analysis III</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; October 2024 &ndash; March 2025</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -151,7 +238,17 @@
             <p class="cv-detail">Tasks: Created exercises, presented exercises, contributed exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Analysis III</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; Oktober 2024 &ndash; März 2025</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://kiliankoch.de" target="_blank" rel="noopener noreferrer">Kilian Koch, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungen erstellt, Übungen präsentiert, Klausuraufgaben beigetragen und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Mathematics III</strong> &middot; Co-lecturer</p>
             <p class="cv-meta">International Academy RWTH Aachen, Aachen &middot; August 2024 &ndash; September 2024</p>
             <p class="cv-detail">Lecturer: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -164,7 +261,20 @@
             <p class="cv-detail">Partners: RWTH Aachen University, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Mathematik III</strong> &middot; Co-Dozent</p>
+            <p class="cv-meta">International Academy der RWTH Aachen, Aachen &middot; August 2024 &ndash; September 2024</p>
+            <p class="cv-detail">Dozent: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>,
+              <a href="https://kiliankoch.de" target="_blank" rel="noopener noreferrer">Kilian Koch, M.Sc.</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~bjomyl/valentin-linse/?allou=1" target="_blank" rel="noopener noreferrer">Valentin Linse, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Interaktive Online-Übungen für internationale Studierende durchgeführt, fachliche Unterstützung geleistet, Lernmaterialien erstellt sowie Prüfungen in einem Online-Format erstellt und korrigiert.</p>
+            <p class="cv-detail">Partner: RWTH Aachen, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Analysis II</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; April 2024 &ndash; September 2024</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -174,7 +284,17 @@
             <p class="cv-detail">Tasks: Created exercises, presented exercises, contributed exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Analysis II</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; April 2024 &ndash; September 2024</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungen erstellt, Übungen präsentiert, Klausuraufgaben beigetragen und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Analysis I</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; October 2023 &ndash; March 2024</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -185,7 +305,18 @@
             <p class="cv-detail">Tasks: Created exercises, presented exercises, contributed exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Analysis I</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; Oktober 2023 &ndash; März 2024</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://de.linkedin.com/in/daniel-meinert-b95136206" target="_blank" rel="noopener noreferrer">Dr. Daniel Meinert</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungen erstellt, Übungen präsentiert, Klausuraufgaben beigetragen und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Mathematics III</strong> &middot; Co-lecturer</p>
             <p class="cv-meta">International Academy RWTH Aachen, Aachen &middot; August 2023 &ndash; September 2023</p>
             <p class="cv-detail">Lecturer: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -196,14 +327,32 @@
             <p class="cv-detail">Partners: RWTH Aachen University, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
           </div>
 
-          <div class="cv-entry">
-            <p class="cv-what"><strong>Seminar on Nonlinear Analysis</strong> &middot; Organiser</p>
-            <p class="cv-meta">RWTH Aachen University, Aachen &middot; June 2023</p>
-            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
-            <p class="cv-detail">Tasks: Organised the seminar; advised students on their talks and assisted with grading.</p>
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Mathematik III</strong> &middot; Co-Dozent</p>
+            <p class="cv-meta">International Academy der RWTH Aachen, Aachen &middot; August 2023 &ndash; September 2023</p>
+            <p class="cv-detail">Dozent: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Interaktive Online-Übungen für internationale Studierende durchgeführt, fachliche Unterstützung geleistet, Lernmaterialien erstellt sowie Prüfungen in einem Online-Format erstellt und korrigiert.</p>
+            <p class="cv-detail">Partner: RWTH Aachen, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-en">
+            <p class="cv-what"><strong>Seminar on Nonlinear Analysis</strong> &middot; Co-organiser</p>
+            <p class="cv-meta">RWTH Aachen University, Aachen &middot; June 2023</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Tasks: Helped organise the seminar; advised students on their talks and assisted with grading.</p>
+          </div>
+
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Seminar Nichtlineare Analysis</strong> &middot; Mitorganisator</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; Juni 2023</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Aufgaben: Bei der Organisation des Seminars geholfen; Studierende bei ihren Vorträgen beraten und bei der Benotung unterstützt.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Higher Mathematics 3</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; April 2023 &ndash; September 2023</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -215,14 +364,33 @@
             <p class="cv-detail">Tasks: Created exercise sheets, presented exercises, prepared exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Höhere Mathematik 3</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; April 2023 &ndash; September 2023</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://de.linkedin.com/in/bernhard-albach-a6ba6216b" target="_blank" rel="noopener noreferrer">Dr. Bernhard Albach</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>,
+              <a href="https://de.linkedin.com/in/heleneschroeder" target="_blank" rel="noopener noreferrer">Dr. Helene Schroeder</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungszettel erstellt, Übungen präsentiert, Klausuraufgaben erstellt und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Partial Differential Equations 2</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; October 2022 &ndash; March 2023</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
             <p class="cv-detail">Tasks: Created exercise sheets and presented exercises.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Partielle Differentialgleichungen 2</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; Oktober 2022 &ndash; März 2023</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Aufgaben: Übungszettel erstellt und Übungen präsentiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Higher Mathematics 4</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; March 2022 &ndash; September 2022</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -234,7 +402,19 @@
             <p class="cv-detail">Tasks: Created exercise sheets, presented exercises, prepared exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Höhere Mathematik 4</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; März 2022 &ndash; September 2022</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~blqow/olaf-wittich/?allou=1" target="_blank" rel="noopener noreferrer">Priv.-Doz. Dr. Olaf Wittich</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>,
+              <a href="https://de.linkedin.com/in/heleneschroeder" target="_blank" rel="noopener noreferrer">Dr. Helene Schroeder</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungszettel erstellt, Übungen präsentiert, Klausuraufgaben erstellt und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Higher Mathematics 3</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; October 2021 &ndash; March 2022</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -247,7 +427,20 @@
             <p class="cv-detail">Tasks: Created exercise sheets, presented exercises, prepared exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Höhere Mathematik 3</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; Oktober 2021 &ndash; März 2022</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~blqow/olaf-wittich/?allou=1" target="_blank" rel="noopener noreferrer">Priv.-Doz. Dr. Olaf Wittich</a>,
+              <a href="https://de.linkedin.com/in/eva-barlage" target="_blank" rel="noopener noreferrer">Eva Barlage, M.Sc.</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>,
+              <a href="https://de.linkedin.com/in/heleneschroeder" target="_blank" rel="noopener noreferrer">Dr. Helene Schroeder</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Übungszettel erstellt, Übungen präsentiert, Klausuraufgaben erstellt und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Mathematics III</strong> &middot; Co-lecturer</p>
             <p class="cv-meta">International Academy RWTH Aachen, Aachen &middot; August 2021 &ndash; September 2021</p>
             <p class="cv-detail">Lecturer: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -259,7 +452,19 @@
             <p class="cv-detail">Partners: RWTH Aachen University, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Mathematik III</strong> &middot; Co-Dozent</p>
+            <p class="cv-meta">International Academy der RWTH Aachen, Aachen &middot; August 2021 &ndash; September 2021</p>
+            <p class="cv-detail">Dozent: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>,
+              <a href="https://de.linkedin.com/in/heleneschroeder" target="_blank" rel="noopener noreferrer">Dr. Helene Schroeder</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Interaktive Online-Übungen für internationale Studierende durchgeführt, fachliche Unterstützung geleistet, Lernmaterialien erstellt sowie Prüfungen in einem Online-Format erstellt und korrigiert.</p>
+            <p class="cv-detail">Partner: RWTH Aachen, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Higher Mathematics 4</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; April 2021 &ndash; September 2021</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -272,7 +477,20 @@
             <p class="cv-detail">Tasks: Created e-tests, prepared exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Höhere Mathematik 4</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; April 2021 &ndash; September 2021</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~blqow/olaf-wittich/?allou=1" target="_blank" rel="noopener noreferrer">Priv.-Doz. Dr. Olaf Wittich</a>,
+              <a href="https://de.linkedin.com/in/eva-barlage" target="_blank" rel="noopener noreferrer">Eva Barlage, M.Sc.</a>,
+              <a href="https://www.math1.rwth-aachen.de/cms/MATH1/Der-Lehrstuhl/Team/Wissenschaftlich-Beschaeftigte/~elksp/Georg-Heinen/" target="_blank" rel="noopener noreferrer">Georg Heinen, M.Sc.</a>,
+              <a href="https://de.linkedin.com/in/heleneschroeder" target="_blank" rel="noopener noreferrer">Dr. Helene Schroeder</a>
+            </p>
+            <p class="cv-detail">Aufgaben: E-Tests erstellt, Klausuraufgaben erstellt und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Higher Mathematics 3</strong> &middot; Assistant</p>
             <p class="cv-meta">RWTH Aachen University, Aachen &middot; October 2020 &ndash; March 2021</p>
             <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -283,7 +501,18 @@
             <p class="cv-detail">Tasks: Created e-tests, prepared exam questions, and corrected exams.</p>
           </div>
 
-          <div class="cv-entry">
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Höhere Mathematik 3</strong> &middot; Assistent</p>
+            <p class="cv-meta">RWTH Aachen, Aachen &middot; Oktober 2020 &ndash; März 2021</p>
+            <p class="cv-detail">Professor: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/wissenschaftlich-beschaeftigte/~blqow/olaf-wittich/?allou=1" target="_blank" rel="noopener noreferrer">Priv.-Doz. Dr. Olaf Wittich</a>,
+              <a href="https://de.linkedin.com/in/eva-barlage" target="_blank" rel="noopener noreferrer">Eva Barlage, M.Sc.</a>
+            </p>
+            <p class="cv-detail">Aufgaben: E-Tests erstellt, Klausuraufgaben erstellt und Klausur korrigiert.</p>
+          </div>
+
+          <div class="cv-entry lang-en">
             <p class="cv-what"><strong>Mathematics III</strong> &middot; Co-lecturer</p>
             <p class="cv-meta">International Academy RWTH Aachen, Aachen &middot; August 2020 &ndash; September 2020</p>
             <p class="cv-detail">Lecturer: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
@@ -293,23 +522,42 @@
             <p class="cv-detail">Tasks: Conducted interactive online exercise sessions for international students, provided academic support, created learning materials, and prepared and graded online examinations.</p>
             <p class="cv-detail">Partners: RWTH Aachen University, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
           </div>
+
+          <div class="cv-entry lang-de">
+            <p class="cv-what"><strong>Mathematik III</strong> &middot; Co-Dozent</p>
+            <p class="cv-meta">International Academy der RWTH Aachen, Aachen &middot; August 2020 &ndash; September 2020</p>
+            <p class="cv-detail">Dozent: <a href="https://www.math1.rwth-aachen.de/cms/math1/der-lehrstuhl/team/professorinnen-und-professoren/~bixel/christof-melcher" target="_blank" rel="noopener noreferrer">Prof. Dr. rer. nat. Christof Melcher</a></p>
+            <p class="cv-detail">Kollegen:
+              <a href="https://de.linkedin.com/in/heleneschroeder" target="_blank" rel="noopener noreferrer">Dr. Helene Schroeder</a>
+            </p>
+            <p class="cv-detail">Aufgaben: Interaktive Online-Übungen für internationale Studierende durchgeführt, fachliche Unterstützung geleistet, Lernmaterialien erstellt sowie Prüfungen in einem Online-Format erstellt und korrigiert.</p>
+            <p class="cv-detail">Partner: RWTH Aachen, proRWTH &ndash; Freunde und F&ouml;rderer der RWTH Aachen e.V.</p>
+          </div>
         </div>
       </details>
     </section>
 
     <section id="teaching">
       <details class="collapse">
-        <summary><h2>Student Teaching Assistant</h2></summary>
+        <summary><h2><span class="lang-en">Student Teaching Assistant</span><span class="lang-de">Wissenschaftliche Hilfskraft</span></h2></summary>
         <div class="card">
-          <p class="cv-meta">2015 &ndash; 2020 &middot; RWTH Aachen University</p>
-          <p class="cv-detail">Tutor for small-group exercise sessions in the following courses:</p>
-          <ul class="cv-list">
+          <p class="cv-meta"><span class="lang-en">2015 &ndash; 2020 &middot; RWTH Aachen University</span><span class="lang-de">2015 &ndash; 2020 &middot; RWTH Aachen</span></p>
+          <p class="cv-detail"><span class="lang-en">Tutor for small-group exercise sessions in the following courses:</span><span class="lang-de">Leitung von Kleingruppen&uuml;bungen f&uuml;r folgende Vorlesungen:</span></p>
+          <ul class="cv-list lang-en">
             <li>Analysis III for Mathematicians (2019/2020)</li>
             <li>Analysis II for Mathematicians (2019)</li>
             <li>Analysis I for Mathematicians (2018/2019)</li>
             <li>Linear Algebra I for Computer Scientists (2018)</li>
             <li>Linear Algebra I for Mathematicians (2017/2018)</li>
             <li>Higher Mathematics III for Electrical Engineers and Physicists (2016/2017)</li>
+          </ul>
+          <ul class="cv-list lang-de">
+            <li>Analysis III f&uuml;r Mathematiker (2019/2020)</li>
+            <li>Analysis II f&uuml;r Mathematiker (2019)</li>
+            <li>Analysis I f&uuml;r Mathematiker (2018/2019)</li>
+            <li>Lineare Algebra I f&uuml;r Informatiker (2018)</li>
+            <li>Lineare Algebra I f&uuml;r Mathematiker (2017/2018)</li>
+            <li>H&ouml;here Mathematik III f&uuml;r Elektrotechniker und Physiker (2016/2017)</li>
           </ul>
         </div>
       </details>

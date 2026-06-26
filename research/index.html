@@ -12,10 +12,13 @@
 <body>
   <main class="page">
     <nav>
-      <a href="/">Home</a>
-      <a href="/research/">Research</a>
-      <a href="/cv/">CV</a>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Farbschema wechseln">Light mode</button>
+      <a href="/"><span class="lang-en">Home</span><span class="lang-de">Startseite</span></a>
+      <a href="/research/"><span class="lang-en">Research</span><span class="lang-de">Forschung</span></a>
+      <a href="/cv/"><span class="lang-en">CV</span><span class="lang-de">Lebenslauf</span></a>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="toolbar-btn" type="button" aria-label="Language / Sprache">Deutsch</button>
+        <button id="theme-toggle" class="toolbar-btn" type="button" aria-label="Theme / Farbschema">Light mode</button>
+      </div>
     </nav>
 
     <section id="research">
@@ -25,9 +28,12 @@
           <div class="hero-slide"></div>
         </div>
         <div class="research-text">
-          <h1>Research</h1>
-          <p>
+          <h1><span class="lang-en">Research</span><span class="lang-de">Forschung</span></h1>
+          <p class="lang-en">
             Topological solitons are localized structures where topology, analysis, and nonlinear PDE meet. My work develops variational and blow-up methods to study their existence, concentration, and asymptotic behavior, with a focus on bimerons and Hopfions.
+          </p>
+          <p class="lang-de">
+            Topologische Solitonen sind lokalisierte Strukturen, in denen Topologie, Analysis und nichtlineare partielle Differentialgleichungen zusammentreffen. Meine Arbeit entwickelt Variations- und Blow-up-Methoden, um ihre Existenz, Konzentration und ihr asymptotisches Verhalten zu untersuchen, mit einem Schwerpunkt auf Bimeronen und Hopfionen.
           </p>
         </div>
       </div>
@@ -35,7 +41,7 @@
 
     <section id="publications">
       <details class="collapse">
-      <summary><h2>Publications</h2></summary>
+      <summary><h2><span class="lang-en">Publications</span><span class="lang-de">Publikationen</span></h2></summary>
       <div class="card">
         <p>
           <a href="https://arxiv.org/abs/2512.11400">
@@ -44,8 +50,8 @@
         </p>
         <p class="muted">Glal Bacho, Christof Melcher &middot; Preprint, arXiv:2512.11400</p>
         <details class="abstract">
-          <summary>Abstract</summary>
-          <p>
+          <summary><span class="lang-en">Abstract</span><span class="lang-de">Zusammenfassung</span></summary>
+          <p class="lang-en">
             Chiral symmetry breaking in magnetic thin films stabilizes new families of
             topological solitons that are absent in conventional anisotropic ferromagnets.
             Beyond the classical chiral skyrmion, which arises in uniaxial systems through
@@ -57,6 +63,21 @@
             quantitative rigidity for the M&ouml;bius group to describe the structure, scaling
             behaviour, and asymptotic limits of such magnetic solitons in both the conformal
             and large&ndash;domain regimes.
+          </p>
+          <p class="lang-de">
+            Die Brechung der chiralen Symmetrie in magnetischen D&uuml;nnschichten stabilisiert
+            neue Familien topologischer Solitonen, die in herk&ouml;mmlichen anisotropen
+            Ferromagneten nicht auftreten. &Uuml;ber das klassische chirale Skyrmion hinaus,
+            das in uniaxialen Systemen durch die Dzyaloshinskii&ndash;Moriya-Wechselwirkung
+            entsteht, treten in Easy-Plane-Situationen dipolare Konfigurationen auf, die als
+            chirale Bimeronen bekannt sind. Auf kompakten Gebieten erscheinen diese
+            solitonischen Zust&auml;nde als lokalisierte Energiekonzentrationen, eingebettet
+            in einen Easy-Plane-Hintergrund. Die Analyse, inspiriert von der
+            Sacks&ndash;Uhlenbeck-Theorie f&uuml;r approximative harmonische Abbildungen,
+            kombiniert Blow-up-Methoden mit quantitativer Starrheit f&uuml;r die
+            M&ouml;bius-Gruppe, um die Struktur, das Skalierungsverhalten und die
+            asymptotischen Grenzwerte solcher magnetischer Solitonen sowohl im konformen als
+            auch im gro&szlig;skaligen Regime zu beschreiben.
           </p>
         </details>
       </div>
