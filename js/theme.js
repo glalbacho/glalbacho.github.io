@@ -24,14 +24,20 @@
     var lang = curLang();
     var tb = document.getElementById("theme-toggle");
     if (tb) {
-      // Show the mode the user would switch TO (the opposite of the current one).
       var target = curTheme() === "light" ? "dark" : "light";
       tb.textContent = THEME_LABELS[target + "-" + lang];
     }
-    var lb = document.getElementById("lang-toggle");
-    if (lb) {
-      lb.textContent = lang === "de" ? "English" : "Deutsch";
+    var opts = document.querySelectorAll(".lang-option");
+    for (var i = 0; i < opts.length; i++) {
+      var on = opts[i].getAttribute("data-set-lang") === lang;
+      opts[i].classList.toggle("active", on);
     }
+  }
+
+  function setLang(next) {
+    document.documentElement.setAttribute("data-lang", next);
+    try { localStorage.setItem("lang", next); } catch (e) {}
+    updateLabels();
   }
 
   function wire() {
@@ -48,15 +54,35 @@
         updateLabels();
       });
     }
-    var lb = document.getElementById("lang-toggle");
-    if (lb) {
-      lb.addEventListener("click", function () {
-        var next = curLang() === "de" ? "en" : "de";
-        document.documentElement.setAttribute("data-lang", next);
-        try { localStorage.setItem("lang", next); } catch (e) {}
-        updateLabels();
+
+    var menu = document.querySelector(".lang-menu");
+    var toggle = document.getElementById("lang-toggle");
+    if (menu && toggle) {
+      function close() {
+        menu.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+      toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var open = menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      var opts = menu.querySelectorAll(".lang-option");
+      for (var i = 0; i < opts.length; i++) {
+        opts[i].addEventListener("click", function () {
+          setLang(this.getAttribute("data-set-lang"));
+          close();
+        });
+      }
+      // Close when clicking elsewhere or pressing Escape.
+      document.addEventListener("click", function (e) {
+        if (!menu.contains(e.target)) close();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") close();
       });
     }
+
     updateLabels();
   }
 

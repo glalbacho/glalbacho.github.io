@@ -115,6 +115,53 @@ nav a:hover::after {
   display: none;
 }
 
+.lang-menu {
+  position: relative;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 140px;
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px var(--shadow);
+  z-index: 20;
+}
+
+.lang-menu.open .lang-dropdown {
+  display: flex;
+}
+
+.lang-option {
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+  color: var(--nav-link);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.lang-option:hover {
+  color: var(--nav-link-hover);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+}
+
+.lang-option.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .hero {
   position: relative;
   display: flex;

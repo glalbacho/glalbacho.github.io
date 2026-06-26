@@ -16,8 +16,14 @@
       <a href="/research/"><span class="lang-en">Research</span><span class="lang-de">Forschung</span></a>
       <a href="/cv/"><span class="lang-en">CV</span><span class="lang-de">Lebenslauf</span></a>
       <div class="nav-actions">
-        <button id="lang-toggle" class="toolbar-btn" type="button" aria-label="Language / Sprache">Deutsch</button>
         <button id="theme-toggle" class="toolbar-btn" type="button" aria-label="Theme / Farbschema">Light mode</button>
+        <div class="lang-menu">
+          <button id="lang-toggle" class="toolbar-btn" type="button" aria-haspopup="true" aria-expanded="false"><span class="lang-en">Language</span><span class="lang-de">Sprache</span></button>
+          <div class="lang-dropdown" role="menu">
+            <button type="button" class="lang-option" data-set-lang="en" role="menuitem">English</button>
+            <button type="button" class="lang-option" data-set-lang="de" role="menuitem">Deutsch</button>
+          </div>
+        </div>
       </div>
     </nav>
 
