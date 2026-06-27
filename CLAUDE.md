@@ -5,6 +5,11 @@ When performing `git add` or `git commit` in this project:
 - Do not include any `Co-Authored-By: Claude` or similar lines
 - Commits should only reflect the human author
 
+## Always commit and push after changes
+
+- After completing any request that modifies files in this repo, automatically `git add`, `git commit`, and `git push origin main` — do not wait to be asked to push.
+- This keeps the live GitHub Pages site in sync with every change.
+
 ## Paper: AngularBimeron.tex
 
 - Do NOT suggest writing a proof for Corollary 3.1 (existence at prescribed angular momentum) — the proof is trivial and not needed
