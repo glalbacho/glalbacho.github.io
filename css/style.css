@@ -107,11 +107,12 @@ nav a:hover::after {
   border-color: var(--accent);
 }
 
-:root[data-lang="en"] .lang-de {
-  display: none;
-}
-
-:root[data-lang="de"] .lang-en {
+:root[data-lang="en"] .lang-de,
+:root[data-lang="en"] .lang-ku,
+:root[data-lang="de"] .lang-en,
+:root[data-lang="de"] .lang-ku,
+:root[data-lang="ku"] .lang-en,
+:root[data-lang="ku"] .lang-de {
   display: none;
 }
 

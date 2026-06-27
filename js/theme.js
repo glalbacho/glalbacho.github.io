@@ -6,18 +6,20 @@
   if (theme === "light") {
     document.documentElement.setAttribute("data-theme", "light");
   }
-  document.documentElement.setAttribute("data-lang", lang === "de" ? "de" : "en");
+  document.documentElement.setAttribute("data-lang", (lang === "de" || lang === "ku") ? lang : "en");
 
   function curTheme() {
     return document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
   }
   function curLang() {
-    return document.documentElement.getAttribute("data-lang") === "de" ? "de" : "en";
+    var l = document.documentElement.getAttribute("data-lang");
+    return (l === "de" || l === "ku") ? l : "en";
   }
 
   var THEME_LABELS = {
     "light-en": "Light mode", "dark-en": "Dark mode",
-    "light-de": "Heller Modus", "dark-de": "Dunkler Modus"
+    "light-de": "Heller Modus", "dark-de": "Dunkler Modus",
+    "light-ku": "Moda ronî", "dark-ku": "Moda tarî"
   };
 
   function updateLabels() {
