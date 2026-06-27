@@ -1,5 +1,5 @@
 (function () {
-  var IMAGES = [
+  var IMAGES = window.SLIDESHOW_IMAGES || [
     "/images/bb/IMG_0114.jpg",
     "/images/bb/IMG_0392.jpg",
     "/images/bb/IMG_0540.jpg",
