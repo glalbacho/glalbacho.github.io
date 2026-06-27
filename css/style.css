@@ -210,7 +210,7 @@ nav a:hover::after {
 }
 
 .hero-slide.is-visible {
-  opacity: 0.25;
+  opacity: 0.35;
 }
 
 .hero > .portrait,
@@ -244,7 +244,7 @@ nav a:hover::after {
 
 /* This box shows the boards more clearly than the home hero. */
 .research-box .hero-slide.is-visible {
-  opacity: 0.40;
+  opacity: 0.50;
 }
 
 /* In dark mode, lift the light text off the white chalk behind it. */
