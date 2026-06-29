@@ -141,6 +141,7 @@ nav a:hover::after {
 }
 
 .lang-option {
+  display: block;
   font: inherit;
   font-size: 14px;
   text-align: left;
@@ -150,12 +151,14 @@ nav a:hover::after {
   border-radius: 6px;
   padding: 8px 12px;
   cursor: pointer;
+  text-decoration: none;
   transition: color 0.15s ease, background 0.15s ease;
 }
 
 .lang-option:hover {
   color: var(--nav-link-hover);
   background: color-mix(in srgb, var(--accent) 16%, transparent);
+  text-decoration: none;
 }
 
 .lang-option.active {

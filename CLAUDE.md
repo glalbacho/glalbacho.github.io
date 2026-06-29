@@ -10,6 +10,13 @@ When performing `git add` or `git commit` in this project:
 - After completing any request that modifies files in this repo, automatically `git add`, `git commit`, and `git push origin main` — do not wait to be asked to push.
 - This keeps the live GitHub Pages site in sync with every change.
 
+## Multilingual pages (EN / DE / KU) — single source of truth
+
+- Page content lives **only** in `src/*.html` (trilingual, using `lang-en` / `lang-de` / `lang-ku` classes). These are the files to edit.
+- Run `python3 tools/gen_i18n.py` to regenerate the live, single-language pages at `/` (en), `/de/` and `/ku/`, plus `sitemap.xml`. The generator also builds the nav, language switcher, `hreflang`/canonical tags and per-page meta.
+- Do **not** hand-edit the generated `index.html`, `de/`, `ku/`, `research/`, `cv/`, `impressum/` files — they are overwritten on each run.
+- Language is selected by URL path, not JavaScript. `theme.js` only handles the dark/light theme and opening the language dropdown.
+
 ## Paper: AngularBimeron.tex
 
 - Do NOT suggest writing a proof for Corollary 3.1 (existence at prescribed angular momentum) — the proof is trivial and not needed

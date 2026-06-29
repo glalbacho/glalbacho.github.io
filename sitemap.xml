@@ -1,17 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.glalbacho.de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/"/>
+    <lastmod>2026-06-29</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.glalbacho.de/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/"/>
+    <lastmod>2026-06-29</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.glalbacho.de/ku/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/"/>
     <lastmod>2026-06-29</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.glalbacho.de/research/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/research/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/research/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/research/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/research/"/>
+    <lastmod>2026-06-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glalbacho.de/de/research/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/research/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/research/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/research/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/research/"/>
+    <lastmod>2026-06-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glalbacho.de/ku/research/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/research/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/research/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/research/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/research/"/>
     <lastmod>2026-06-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.glalbacho.de/cv/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/cv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/cv/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/cv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/cv/"/>
+    <lastmod>2026-06-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.glalbacho.de/de/cv/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/cv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/cv/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/cv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/cv/"/>
+    <lastmod>2026-06-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.glalbacho.de/ku/cv/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.glalbacho.de/cv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.glalbacho.de/de/cv/"/>
+    <xhtml:link rel="alternate" hreflang="ku" href="https://www.glalbacho.de/ku/cv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.glalbacho.de/cv/"/>
     <lastmod>2026-06-29</lastmod>
     <priority>0.6</priority>
   </url>
