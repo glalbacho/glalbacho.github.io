@@ -68,7 +68,14 @@ def filter_lang(html, target):
     p = LangFilter(target)
     p.feed(html)
     p.close()
-    return p.result().strip("\n")
+    return _tidy(p.result())
+
+def _tidy(text):
+    """Drop whitespace-only lines left behind by removed language blocks and
+    trim trailing whitespace. Safe: there is no <pre>/<textarea> in the content,
+    and whitespace between inline elements still collapses to a single space."""
+    lines = [ln.rstrip() for ln in text.split("\n")]
+    return "\n".join(ln for ln in lines if ln.strip())
 
 # ---------------------------------------------------------------- url helpers
 PAGE_SEG = {"home": "", "research": "research/", "cv": "cv/", "impressum": "impressum/"}
