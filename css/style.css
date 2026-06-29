@@ -536,6 +536,21 @@ a:hover {
   }
 }
 
+.notfound {
+  text-align: center;
+  padding: 56px 0 24px;
+}
+
+.notfound h1 {
+  font-size: 96px;
+  line-height: 1;
+  margin: 0 0 8px;
+}
+
+.notfound .muted {
+  font-size: 18px;
+}
+
 .links {
   margin-top: 24px;
 }
