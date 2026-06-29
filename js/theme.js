@@ -6,7 +6,11 @@
   if (theme === "light") {
     document.documentElement.setAttribute("data-theme", "light");
   }
-  document.documentElement.setAttribute("data-lang", (lang === "de" || lang === "ku") ? lang : "en");
+  var initialLang = (lang === "de" || lang === "ku") ? lang : "en";
+  document.documentElement.setAttribute("data-lang", initialLang);
+  // Keep the document language in sync for screen readers, translators, and SEO.
+  // Kurmancî Kurdish is "ku"; "en"/"de" map directly.
+  document.documentElement.setAttribute("lang", initialLang);
 
   function curTheme() {
     return document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
@@ -39,6 +43,7 @@
 
   function setLang(next) {
     document.documentElement.setAttribute("data-lang", next);
+    document.documentElement.setAttribute("lang", next);
     try { localStorage.setItem("lang", next); } catch (e) {}
     updateLabels();
   }
