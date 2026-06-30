@@ -12,7 +12,7 @@
   --link-hover: #9cb8fa;
   --accent: #7aa2f7;
   --shadow: rgba(0, 0, 0, 0.4);
-  --scrim: rgba(0, 0, 0, 0.5);
+  --scrim: rgba(0, 0, 0, 0.72);
 }
 
 :root[data-theme="light"] {
@@ -29,7 +29,7 @@
   --link-hover: #3744c4;
   --accent: #4658e0;
   --shadow: rgba(0, 0, 0, 0.07);
-  --scrim: rgba(255, 255, 255, 0.6);
+  --scrim: rgba(255, 255, 255, 0.8);
 }
 
 html {
