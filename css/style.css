@@ -12,9 +12,9 @@
   --link-hover: #9cb8fa;
   --accent: #7aa2f7;
   --shadow: rgba(0, 0, 0, 0.4);
-  --board-1: rgba(16, 32, 24, 0.82);
-  --board-2: rgba(24, 44, 34, 0.75);
-  --board-3: rgba(34, 56, 44, 0.67);
+  --board-1: rgba(30, 58, 44, 0.80);
+  --board-2: rgba(41, 72, 55, 0.73);
+  --board-3: rgba(53, 86, 66, 0.65);
 }
 
 :root[data-theme="light"] {
@@ -286,11 +286,6 @@ nav a:hover::after {
 :root[data-theme="light"] .hero-text .muted,
 :root[data-theme="light"] .research-text .muted {
   color: #384452;
-}
-
-/* Light mode: a touch more blur so the chalk recedes behind the text. */
-:root[data-theme="light"] .hero-slide {
-  filter: blur(1.5px) saturate(0.95);
 }
 
 .hero-text {
