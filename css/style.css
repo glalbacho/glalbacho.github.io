@@ -12,7 +12,6 @@
   --link-hover: #9cb8fa;
   --accent: #7aa2f7;
   --shadow: rgba(0, 0, 0, 0.4);
-  --scrim: rgba(0, 0, 0, 0.72);
 }
 
 :root[data-theme="light"] {
@@ -29,7 +28,6 @@
   --link-hover: #3744c4;
   --accent: #4658e0;
   --shadow: rgba(0, 0, 0, 0.07);
-  --scrim: rgba(255, 255, 255, 0.8);
 }
 
 html {
@@ -208,7 +206,7 @@ nav a:hover::after {
   background-size: cover;
   background-position: center;
   transform: scale(1.2);
-  filter: saturate(1.03);
+  filter: blur(2px) saturate(1.02);
   opacity: 0;
   transition: opacity 2.5s ease;
   will-change: opacity;
@@ -219,8 +217,9 @@ nav a:hover::after {
   opacity: 1;
 }
 
-/* Translucent neutral scrim painted over the opaque photo (below the text).
-   Black in dark mode, white in light mode — keeps text legible either way. */
+/* Chalkboard scrim over the opaque (blurred) photo, below the text.
+   A green gradient — darker "Tafelgrün" to a lighter chalk-dust green —
+   identical in dark and light mode, like the board in the portrait. */
 .hero::after,
 .research-box::after {
   content: "";
@@ -228,7 +227,12 @@ nav a:hover::after {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: var(--scrim);
+  background: linear-gradient(
+    150deg,
+    rgba(31, 54, 42, 0.90) 0%,
+    rgba(48, 82, 62, 0.85) 55%,
+    rgba(74, 112, 90, 0.78) 100%
+  );
 }
 
 .hero > .portrait,
@@ -260,10 +264,32 @@ nav a:hover::after {
   margin-bottom: 0;
 }
 
-/* In dark mode, lift the light text off the white chalk behind it. */
-:root:not([data-theme="light"]) .hero-text,
-:root:not([data-theme="light"]) .research-text {
+/* The boxes read as a green chalkboard in either theme, so the text is
+   "chalk" light in both modes, lifted off the board with a soft shadow. */
+.hero-text,
+.research-text {
+  color: #eaf0ea;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 0 9px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text h1,
+.research-text h1 {
+  color: #ffffff;
+}
+
+.hero-text .muted,
+.research-text .muted {
+  color: rgba(234, 240, 234, 0.82);
+}
+
+.hero-text a,
+.research-text a {
+  color: #d7e8dc;
+}
+
+.hero-text a:hover,
+.research-text a:hover {
+  color: #ffffff;
 }
 
 .hero-text {
