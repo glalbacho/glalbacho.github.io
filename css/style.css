@@ -12,6 +12,7 @@
   --link-hover: #9cb8fa;
   --accent: #7aa2f7;
   --shadow: rgba(0, 0, 0, 0.4);
+  --scrim: rgba(0, 0, 0, 0.5);
 }
 
 :root[data-theme="light"] {
@@ -28,6 +29,7 @@
   --link-hover: #3744c4;
   --accent: #4658e0;
   --shadow: rgba(0, 0, 0, 0.07);
+  --scrim: rgba(255, 255, 255, 0.6);
 }
 
 html {
@@ -206,14 +208,27 @@ nav a:hover::after {
   background-size: cover;
   background-position: center;
   transform: scale(1.2);
-  filter: blur(1px) saturate(0.95);
+  filter: saturate(1.03);
   opacity: 0;
   transition: opacity 2.5s ease;
   will-change: opacity;
 }
 
+/* The image layer is fully opaque; readability comes from the scrim on top. */
 .hero-slide.is-visible {
-  opacity: 0.25;
+  opacity: 1;
+}
+
+/* Translucent neutral scrim painted over the opaque photo (below the text).
+   Black in dark mode, white in light mode — keeps text legible either way. */
+.hero::after,
+.research-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--scrim);
 }
 
 .hero > .portrait,
@@ -243,11 +258,6 @@ nav a:hover::after {
 
 .research-text p:last-child {
   margin-bottom: 0;
-}
-
-/* This box shows the boards more clearly than the home hero. */
-.research-box .hero-slide.is-visible {
-  opacity: 0.40;
 }
 
 /* In dark mode, lift the light text off the white chalk behind it. */
