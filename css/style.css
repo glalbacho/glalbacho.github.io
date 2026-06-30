@@ -276,6 +276,23 @@ nav a:hover::after {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 0 9px rgba(0, 0, 0, 0.4);
 }
 
+/* Light mode: lift the dark text off the lighter board with a faint glow,
+   and darken the muted lines so they stay legible on the green. */
+:root[data-theme="light"] .hero-text,
+:root[data-theme="light"] .research-text {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+:root[data-theme="light"] .hero-text .muted,
+:root[data-theme="light"] .research-text .muted {
+  color: #384452;
+}
+
+/* Light mode: a touch more blur so the chalk recedes behind the text. */
+:root[data-theme="light"] .hero-slide {
+  filter: blur(1.5px) saturate(0.95);
+}
+
 .hero-text {
   max-width: 650px;
 }
